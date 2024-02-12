@@ -98,8 +98,6 @@ main section{
 	justify-content: center;
 	width: 100%;
 	padding:50px 0px;
-	border-bottom: 1px solid black;
-	border-radius: 0px 0px 75px 75px;
 }
 main section h1,h2{
 	text-align: center;
@@ -177,15 +175,18 @@ main section div a{
 	margin: 0px;
 	text-align: left;
 }
-.dual div p, a{
+main div p, a{
 	font-size: 18px;
 	font-weight: 100;
 }
-.dual h5{
+main h5{
 	font-size: 28px;
 }
-.dual h3{
+main h3{
 	font-size: 56px;
+}
+main h4{
+	font-size: 20px;
 }
 .dual div img{
 	height: 300px;
@@ -193,7 +194,10 @@ main section div a{
 .columna{
 	display: flex;
 	flex-direction: column;
+	justify-content: left;
 	align-items: center;
+	flex-wrap: wrap;
+	
 }
 .columna a{
 	text-align: center;
@@ -201,4 +205,30 @@ main section div a{
 .columna img{
 	height: 36%;
 	width: 70%;
+}
+.oscuro{
+	background-color: #03061E;
+	gap: 0px 130px;
+	color: white;
+}
+.iconos{
+	display: flex;
+	height: 30px;
+	gap: 0px 15px;
+}
+.repartido{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 60%;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	height: 150px;
+}
+footer{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
