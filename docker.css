@@ -1,9 +1,8 @@
+/*Fuentes importadas*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-.colorgrad{
-	background:linear-gradient(90deg, #0B214A, #1C5FE6);
-	-webkit-text-fill-color:transparent;
-	-webkit-background-clip:text;
-}
+
+/*Reglas generales*/
+
 body{
 	margin: 0;
 	padding: 0;
@@ -13,12 +12,22 @@ body{
 a{
 	text-decoration: none;
 }
-header a{
-	color: #C6BEC4;
-}
 a:hover{
 	text-decoration: underline;
 }
+
+section{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+
+/*Header*/
+header a{
+	color: #C6BEC4;
+}
+
 header div{
 	background-color: #00084D;
 	display: flex;	
@@ -47,6 +56,9 @@ header nav{
 	display: flex;
 	flex-wrap: wrap;
 	border-bottom: 1px solid black;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 15px;
 	gap: 30px;
 	justify-content: space-around;
 	align-content: center;
@@ -54,7 +66,6 @@ header nav{
 	font-weight: 500;
 }
 header nav img{
-
 	height: 100px;
 }
 header nav a{
@@ -67,36 +78,19 @@ header nav span{
 	align-items: center;
 	gap: 20px;
 }
-.boton_blanco{
-	border: 1px solid black;
-	padding: 15px 20px;
-	border-radius: 5px;
-	color: black;
-	font-weight: bold;
-	background-color: white;
-}
-
-.boton_azul{
-	border: 1px solid black;
-	padding: 15px 10px;
-	border-radius: 5px;
-	color: white;
-	font-weight: bold;
-	background-color: #0C49C2;
-}
-
+/*Main*/
 main{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 20px 0px;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 main section{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	padding:50px 0px;
 }
 main section h1,h2{
 	text-align: center;
@@ -129,15 +123,84 @@ main section div a{
 	font-size: 24px;
 	font-weight: 500;
 }
+main div p, a{
+	font-size: 18px;
+	font-weight: 100;
+}
+main h5{
+	font-size: 28px;
+}
+main h3{
+	font-size: 56px;
+}
+main h4{
+	font-size: 20px;
+}
+
+/*Footer*/
+footer{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding-bottom: 50px;
+}
+/*Id*/
+
+
+/*Clases*/
+.colorgrad{
+	background:linear-gradient(90deg, #0B214A, #1C5FE6);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+}
+.boton_blanco{
+	border: 1px solid black;
+	padding: 15px 20px;
+	border-radius: 5px;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+}
+.boton_blanco_redondo{
+	border: 1px solid black;
+	padding: 15px 20px;
+	border-radius: 30px;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+}
+.boton_azul{
+	border: 1px solid black;
+	padding: 15px 10px;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	background-color: #0C49C2;
+}
+.boton_azul_redondo{
+	border: 1px solid black;
+	padding: 15px 10px;
+	border-radius: 30px;
+	color: white;
+	font-weight: bold;
+	background-color: #0C49C2;
+}
+.botones{
+	display: flex;
+	flex-wrap: wrap;
+}
 .logos{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 0px 10%;
+	padding: 0px ;
 	gap: 0px;
 }
 .logos div{
 	margin: 0px;
+	display: flex;
+	justify-content: center;
 }
 .stats{
 	display: flex;
@@ -174,26 +237,15 @@ main section div a{
 	margin: 0px;
 	text-align: left;
 }
-main div p, a{
-	font-size: 18px;
-	font-weight: 100;
-}
-main h5{
-	font-size: 28px;
-}
-main h3{
-	font-size: 56px;
-}
-main h4{
-	font-size: 20px;
-}
+
 .dual div img{
-	height: 300px;
+	height: 100%;
+	width: 100%;
 }
 .columna{
 	display: flex;
 	flex-direction: column;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: nowrap;	
 }
@@ -206,6 +258,8 @@ main h4{
 	background-color: #03061E;
 	gap: 0px 130px;
 	color: white;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 .iconos{
 	display: flex;
@@ -222,10 +276,57 @@ main h4{
 	gap: 0px 50px;
 	
 }
-footer{
+
+.columna_unica{
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
 	flex-direction: column;
-	padding-bottom: 50px;
+	align-items: center;
+	padding: 5% 5%;
+
+}
+.columna_unica img{
+	height: 80%;
+	width: 60%;
+}
+
+.columna_dual{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.columna_dual div{
+	display: flex;
+	flex-direction: column;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.columna_dual div > p{
+	text-align: left;
+}
+
+.columna_dual div > img{
+	height: 100%;
+	width: 100%;
+}
+.ancho700{
+	width: 700px;
+}
+.ancho175{
+	width: 175px;
+}
+.ancho500{
+	width: 500px;
+}
+.ancho400{
+	width: 400px;
+}
+.columna_grupo{
+	display: flex;
+	flex-direction: column;
+	align-content: baseline;
+}
+.columna_grupo img{
+	height: 50px;
 }
