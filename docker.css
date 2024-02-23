@@ -250,22 +250,34 @@ footer{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
 	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;	
 }
 
-.columna img{
-	height: 36%;
-
+.columna > h3{
+	font-size: 32px;
+	margin: 0px;
+}
+.columna > p{
+	margin: 0px;
+	font-size: 48px;
+	font-weight: 700;
 }
 .oscuro{
 	background-color: #03061E;
 	gap: 0px 130px;
 	color: white;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding: 5% 0%;
+	
+}
+.oscuro > .columna > h3{
+	font-size: 56px;
+	font-weight: 700;
+}
+.oscuro > .columna > p{
+	font-size: 24px;
+	font-weight: 100;
 }
 .iconos{
 	display: flex;
@@ -280,7 +292,6 @@ footer{
 	align-content: left;
 	flex-wrap: wrap;
 	gap: 0px 50px;
-	
 }
 
 .columna_unica{
@@ -344,7 +355,7 @@ footer{
 .ancho400{
 	width: 400px;
 }
-.ancho400 > *{
+.ancho400 > * {
 	margin: 0px;
 }
 .columna_grupo{
@@ -357,7 +368,40 @@ footer{
 .columna_grupo img{
 	height: 50px;
 }
+.columna_grupo > p {
+	font-weight: 500;
+}
+.columna_grupo > span > p{
+	font-weight: 100;
+	font-size: 18px;
+}
+
 .grupo{
 	display: flex;
 	flex-wrap: wrap;
+}
+.caja_azul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: white;
+	background-color: #0C49C2;
+	border: 1px solid black;
+	padding: 30px 10px;
+	border-radius: 25px;
+	border: none;
+}
+.caja_azul > .columna > h4{
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0px;
+}
+.caja_azul > .columna > p{
+	font-size: 18px;
+	font-weight: 100;
+}
+.caja_azul > .boton_blanco_redondo{
+	padding: 18px 10px;
+	border: none;
+	border-radius: 25px;
 }
