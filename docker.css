@@ -16,13 +16,6 @@ a:hover{
 	text-decoration: underline;
 }
 
-section{
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
-
-
 /*Header*/
 header a{
 	color: #C6BEC4;
@@ -163,7 +156,6 @@ footer{
 	background-color: white;
 }
 .boton_blanco_redondo{
-	border: 1px solid black;
 	padding: 15px 20px;
 	border-radius: 30px;
 	color: black;
@@ -171,7 +163,6 @@ footer{
 	background-color: white;
 }
 .boton_azul{
-	border: 1px solid black;
 	padding: 15px 10px;
 	border-radius: 5px;
 	color: white;
@@ -179,7 +170,6 @@ footer{
 	background-color: #0C49C2;
 }
 .boton_azul_redondo{
-	border: 1px solid black;
 	padding: 15px 10px;
 	border-radius: 30px;
 	color: white;
@@ -189,6 +179,9 @@ footer{
 .botones{
 	display: flex;
 	flex-wrap: wrap;
+}
+.botones > *{
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .logos{
 	display: flex;
@@ -284,15 +277,6 @@ footer{
 	height: 30px;
 	gap: 0px 15px;
 }
-.repartido{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
-	align-content: left;
-	flex-wrap: wrap;
-	gap: 0px 50px;
-}
 
 .columna_unica{
 	display: flex;
@@ -386,7 +370,8 @@ footer{
 	justify-content: center;
 	color: white;
 	background-color: #0C49C2;
-	border: 1px solid black;
+	margin-left: 5%;
+	margin-right: 5%;
 	padding: 30px 10px;
 	border-radius: 25px;
 	border: none;
@@ -403,5 +388,49 @@ footer{
 .caja_azul > .boton_blanco_redondo{
 	padding: 18px 10px;
 	border: none;
-	border-radius: 25px;
+	border-radius: 15px;
+}
+.caja_azul > .boton_blanco_redondo > a:hover{
+	text-decoration: none;
+}
+.caja_azul > .boton_blanco_redondo:hover{
+	background-color: #EFEFF2;
+}
+
+.repartido, .iconos_repartidos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 0px 50px;
+	padding: 5%;
+	
+}
+
+@media (max-width: 991px) {
+	main > section:first-child{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+    .repartido{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 5%;
+	}
+	.repartido > img{
+		width: 30px;
+	}
+	.repartido > .iconos{
+		width: 30%;
+	}
+	.oscuro > .logos{
+		flex-wrap: nowrap;
+	}
+	.oscuro > .logos > div{
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
 }
